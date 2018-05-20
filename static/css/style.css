@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategray;
+    background-color: black;
 }
 
 .navbar::before {
@@ -10,6 +10,10 @@ body {
 .navbar::after {
     content: " ";
     display: table;
+}
+
+.navbar {
+    background-color: #454545
 }
 
 .nav-menu li {
