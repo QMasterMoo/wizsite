@@ -1,0 +1,24 @@
+body {
+    background-color: darkslategray;
+}
+
+.navbar::before{
+    content: " ";
+    display: table;
+}
+
+.navbar::after{
+    content: " ";
+    display: table;
+}
+
+.nav-entry {
+    color: white;
+}
+
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
