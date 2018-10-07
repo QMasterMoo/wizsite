@@ -2,25 +2,12 @@ body {
     background-color: black;
 }
 
-.content {
-    display: table;
-}
-
-.content-text {
+.content-box {
     color: white;
+    background: darkgreen;
 }
 
-.navbar::before {
-    content: " ";
-    display: table;
-}
-
-.navbar::after {
-    content: " ";
-    display: table;
-}
-
-.navbar {
+/* .navbar {
     background-color: #454545;
 }
 
@@ -42,7 +29,7 @@ body {
     padding: 0;
     list-style-type: none;
     list-style: none;
-}
+} */
 
 #banner {
     background: linear-gradient(red, blue)
@@ -96,6 +83,8 @@ img.stream-preview {
     float: left !important;
 }
 
-*, ::before, ::after{
-    box-sizing: border-box;
+#content {
+    width: 70%;
+    margin: auto;
+    background: green;
 }
