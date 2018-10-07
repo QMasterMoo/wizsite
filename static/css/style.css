@@ -2,6 +2,14 @@ body {
     background-color: black;
 }
 
+.content {
+    display: table;
+}
+
+.content-text {
+    color: white;
+}
+
 .navbar::before {
     content: " ";
     display: table;
