@@ -1,17 +1,21 @@
 /* set overall width of webpage */
 body {
-    max-width: 1200px;
-    width:  90%;
+    max-width: 1080px;
     min-width: 480px;
     margin: auto;
+    background-image: url("https://i.imgur.com/N2e34HA.png");
 }
 
-/* general background color for menus */
+/* general utility classes */
 .menu-bg {
     background-color: #444444;
 }
 .blk{
     background-color: #000000;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 /* navbar css */
@@ -24,11 +28,6 @@ nav .navbar-nav li a:hover{
     border-radius: 3px;
 }
 
-.nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
 /* BANNER CSS */
 #banner {
     /*this gradient doesn't look half bad?*/
@@ -38,16 +37,21 @@ nav .navbar-nav li a:hover{
 
 #logo img {
     max-width: 480px;
-    height: auto;
-    min-width: 200px;
     width: auto;
+    height: auto;
+    max-height: 120px;
 }
 
-#online-status {
+#online-status h5{
     color: green!important;
     position: absolute;
     top: 24px;
     left: 20px;
+}
+#online-status img{
+    width:auto;
+    height: auto;
+    max-height: 120px;
 }
 
 #stream-status p{
@@ -55,7 +59,12 @@ nav .navbar-nav li a:hover{
     color: white;
 }
 
+/* CONTENT CSS */
 #content {
-    background: linear-gradient(#111111, #222222);
+    /* Continue with simple gradient */
+    background: linear-gradient(#111111, #2F2F2F);
 }
 
+/* #blog div.card {
+    padding-bottom: 0px;
+} */
