@@ -10,24 +10,26 @@
     <body class="bg-dark">
 
         <!-- Navigation bar, pretty much  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark blk">
             <a class="navbar-brand" href="#">
                 <img src="./static/images/mustard.png" height="30" width="30" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">toggle?</span>
+                    <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Twitch</a>
+                            <a class="nav-link" href="https://twitch.tv/robwiztv">Twitch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Twitter</a>
+                                <a class="nav-link" href="https://www.youtube.com/user/robwiztv">YouTube</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/robwiztv">Twitter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Discord</a>
+                            <a class="nav-link" href="https://discord.gg/AHghmT9">Discord</a>
                         </li>
                     </li>
                 </ul>
@@ -36,62 +38,35 @@
 
         <!-- Banner with information -->
         <section id="banner">
-            <div class="container">
+        <div class="container">
+            <div class="row">
                 <!-- Displays logo icon -->
-                <div id="logo">
-                    <img src="./static/images/logo.png" />
+                <div id="logo" class="col-md-3 mr-auto">
+                    <img src="./static/images/logo.png"/>
                 </div>
-
-                <div id="stream-status">
-                    <div id="stream-status-info">
-                        <h2>Status</h2>
-                        <p>
-                            info would go here
-                            <br />
-                            but I have no info retrieved...
-                        </p>
+                <div class="col-md-5">
+                    <div class="conatiner">
+                    <div id="stream-box" class="row">
+                        <div class="col-md-5">
+                            <div id="stream-status">
+                            <h5 id="online-status" class="p1">Online</h5>
+                            <p>Stream title</p>
+                            <p>Game</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="./static/images/stream-preview.PNG"/>
+                        </div> 
                     </div>
-                    <div id="stream-status-preview">
-                        <img class="stream-preview" src="./static/images/stream-preview.PNG" />
                     </div>
                 </div>
             </div>
+        </div>
         </section>
 
-        <!-- Content section -->
-        <!-- <section id="content">
-            <div class="row">
-                <div id="tweet-box" class="col-md-6 content-box">
-                    <ul>
-                        <li>
-                            tweet #3
-                        </li>
-                        <li>
-                            tweet #2
-                        </li>
-                        <li>
-                            tweet #1
-                        </li>
-                    </ul>
-                </div>
-                <div id="blog-box" class="col-md-6 content-box">
-                    <ul>
-                        <li>
-                            blog #3
-                        </li>
-                        <li>
-                            blog #2
-                        </li>
-                        <li>
-                            blog #1
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section> -->
         
         <div id="content" class="row">
-                <div class="col-md-4">.col-md-4</div>
+                <!-- <div class="col-md-4">.col-md-4</div>
                 <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
               </div>
               <div id="content" class="row">
@@ -101,6 +76,6 @@
               <div id="content" class="row">
                 <div class="col-auto mr-auto">.col-auto .mr-auto</div>
                 <div class="col-auto">.col-auto</div>
-              </div>
+              </div> -->
     </body>
 </html>

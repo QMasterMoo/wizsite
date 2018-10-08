@@ -1,18 +1,23 @@
-.content-box {
-    color: white;
-    background: darkgreen;
+/* set overall width of webpage */
+body {
+    max-width: 1200px;
+    width:  90%;
+    min-width: 480px;
+    margin: auto;
+}
+
+/* general background color for menus */
+.menu-bg {
+    background-color: #444444;
+}
+.blk{
+    background-color: #000000;
 }
 
 /* navbar css */
-.navbar {
-    width:70%;
-    margin: auto;
-    color: white;
-}
-
-nav .navbar-nav li a{
+/* nav .navbar-nav li a{
     color: white !important;
-}
+} */
 nav .navbar-nav li a:hover{
     background-color: white;
     color: black !important;
@@ -22,61 +27,36 @@ nav .navbar-nav li a:hover{
     border-radius: 3px;
 }
 
+/* BANNER CSS */
 #banner {
-    background: linear-gradient(red, blue)
-}
-
-#banner .container {
-    display: flex;
-    padding: 0;
-}
-
-#logo {
-    flex: 1;
-    margin: 20px;
-
-    /* justify-content: center; /* moved img towards center */
-    align-items: center;
-    /* display: flex; */
-    /* overflow: hidden; */
+    /*this gradient doesn't look half bad?*/
+    background: linear-gradient(#000000, #111111);
+    border-radius: 3px;
 }
 
 #logo img {
-    /* flex-shrink: 0; */
-    /* width: auto; */
-    min-height: 100%;
-}
-
-#stream-status {
-    text-align: right;
-    border-radius: 3px;
-    background: #656565;
-    display: flex;
-    margin: 20px;
+    max-height: 120px;
+    height: auto;
+    min-height: 30px;
+    width: auto;
     padding: 10px;
 }
 
-#stream-status-info {
-    padding-right: 10px;
+#stream-box {
+    padding: 5px;
+}
+#online-status {
+    color: green !important;
+}
+#stream-status p, h5 {
+    text-align: right;
     color: white;
 }
-
-img.stream-preview {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: 200px; 
-}
-
-.pull-right {
-    float: right !important;
-}
-.pull-left {
-    float: left !important;
+#stream-status img {
+    display: inline-block;
+    width: 100px;
 }
 
 #content {
-    width: 70%;
-    margin: auto;
     background: green;
 }
