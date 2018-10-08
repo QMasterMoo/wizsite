@@ -10,7 +10,8 @@
     <body class="bg-dark">
 
         <!-- Navigation bar, pretty much  -->
-        <nav class="navbar navbar-expand-lg navbar-dark blk">
+        <nav class="navbar navbar-expand-lg navbar-dark blk container">
+        
             <a class="navbar-brand" href="#">
                 <img src="./static/images/mustard.png" height="30" width="30" />
             </a>
@@ -37,15 +38,14 @@
         </nav>
 
         <!-- Banner with information -->
-        <section id="banner">
-        <div class="container">
+        <section id="banner" class="container">
             <div class="row">
                 <!-- Displays logo icon -->
                 <div id="logo" class="col-md-3">
                     <img src="./static/images/logo.png"/>
                 </div>
-                <div class="col-md-5 offset-md-4">
-                    <div class="conatiner">
+                <div class="col-md-6 offset-md-3">
+                    <div class="container">
                     <div id="stream-box" class="row">
                         <div class="col-md-5">
                             <div id="stream-status">
@@ -61,12 +61,9 @@
                     </div>
                 </div>
             </div>
-        </div>
         </section>
-
-        <section id="content">
-        <div class="conatiner">
-            <div class="row">
+        <section id="content" class="container">
+            <div id="content" class="row">
                 <div id="tweeter" class="col-md-5">
                     <!-- cards for each tweet -->
                     <br />
@@ -94,7 +91,6 @@
                     <!-- Cards for each blog -->
                 </div>
             </div>
-        </div>
         </section>
     </body>
 </html>

@@ -32,16 +32,12 @@ nav .navbar-nav li a:hover{
 }
 
 #logo img {
-    max-height: 120px;
+    max-width: 480px;
     height: auto;
-    min-height: 30px;
+    min-width: 200px;
     width: auto;
-    padding: 10px;
 }
 
-#stream-box {
-    padding: 5px;
-}
 #online-status {
     color: green !important;
 }
