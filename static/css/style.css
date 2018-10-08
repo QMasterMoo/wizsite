@@ -40,6 +40,7 @@ nav .navbar-nav li a:hover{
     width: auto;
     height: auto;
     max-height: 120px;
+    border-radius: 3px;
 }
 
 #online-status h5{
@@ -52,6 +53,7 @@ nav .navbar-nav li a:hover{
     width:auto;
     height: auto;
     max-height: 120px;
+    border-radius: 3px;
 }
 
 #stream-status p{
@@ -63,6 +65,7 @@ nav .navbar-nav li a:hover{
 #content {
     /* Continue with simple gradient */
     background: linear-gradient(#111111, #2F2F2F);
+    color: lightgrey;
 }
 
 /* #blog div.card {
