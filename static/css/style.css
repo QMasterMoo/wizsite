@@ -24,6 +24,11 @@ nav .navbar-nav li a:hover{
     border-radius: 3px;
 }
 
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 /* BANNER CSS */
 #banner {
     /*this gradient doesn't look half bad?*/
@@ -39,9 +44,13 @@ nav .navbar-nav li a:hover{
 }
 
 #online-status {
-    color: green !important;
+    color: green!important;
+    position: absolute;
+    top: 24px;
+    left: 20px;
 }
-#stream-status p, h5 {
+
+#stream-status p{
     text-align: right;
     color: white;
 }
@@ -49,3 +58,4 @@ nav .navbar-nav li a:hover{
 #content {
     background: linear-gradient(#111111, #222222);
 }
+
