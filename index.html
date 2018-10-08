@@ -7,30 +7,32 @@
         <link rel="stylesheet" href="./static/css/style.css">
         <meta charset="utf-8"/>
     </head>
-    <body>
-        <!-- Navigation bar at top of screen -->
-        <div id="main-navbar" class="navbar">
-            <div class="container">
-                <!-- <ul class="nav-menu nav-daddy pull-left"> -->
-                <ul class="nav-menu pull-left">
-                    <li>
-                        <a>Home</a>
-                    </li>
-                    <li>
-                        <a>Twitch</a>
-                    </li>
-                    <li>
-                        <a>Twitter</a>
-                    </li>
-                    <li>
-                        <a>Donate</a>
-                    </li>
-                    <li>
-                        <a>Subscribe</a>
+    <body class="bg-dark">
+
+        <!-- Navigation bar, pretty much  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="./static/images/mustard.png" height="30" width="30" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">toggle?</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Twitch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Discord</a>
+                        </li>
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
 
         <!-- Banner with information -->
         <section id="banner">

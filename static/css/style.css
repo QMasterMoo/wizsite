@@ -1,35 +1,26 @@
-body {
-    background-color: black;
-}
-
 .content-box {
     color: white;
     background: darkgreen;
 }
 
-/* .navbar {
-    background-color: #454545;
+/* navbar css */
+.navbar {
+    width:70%;
+    margin: auto;
+    color: white;
 }
 
-.nav-menu li {
-    float: left;
-}
-
-.nav-menu li a {
+nav .navbar-nav li a{
     color: white !important;
-    padding-left: 15px;
-    padding-right: 15px;
 }
-.nav-menu li a:hover {
-    background-color: #111111;
+nav .navbar-nav li a:hover{
+    background-color: white;
+    color: black !important;
+    margin-top: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
 }
-
-.nav-menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    list-style: none;
-} */
 
 #banner {
     background: linear-gradient(red, blue)
@@ -67,6 +58,7 @@ body {
 
 #stream-status-info {
     padding-right: 10px;
+    color: white;
 }
 
 img.stream-preview {
