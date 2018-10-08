@@ -8,9 +8,8 @@
         <meta charset="utf-8"/>
     </head>
     <body>
-
         <!-- Navigation bar, pretty much  -->
-        <nav class="navbar navbar-expand-lg navbar-dark blk container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark blk container-fluid mt-1">
         
             <a class="navbar-brand" href="#">
                 <img src="./static/images/mustard.png" height="30" width="30" />
@@ -44,20 +43,28 @@
                 <div id="logo" class="col-md-3">
                     <img src="./static/images/logo.png"/>
                 </div>
-                <div class="col-md-5 offset-md-4">
-                    <div class="container">
-                    <div id="stream-box" class="row">
-                        <div class="col-md-5 nopadding">
-                            <div id="stream-status">
-                            <p>Stream title</p>
-                            <p>Game</p>
+                <div class="col-md-4 offset-md-5">
+                    <div class="card-group">
+                        <div class="card bg-dark" style="width: 18rem;">
+                            <div class="card-header">
+                                <h6 class="text-center">
+                                    Stream Title
+                                </h6>
+                            </div>
+                            <h6 class="text-center">
+                                Everquest Reborn
+                            </h6>
+                            <h6 class="text-center text-muted">
+                                about 3 hours ago
+                            </h6>
+                        </div>
+                        <div class="card bg-dark">
+                            <img class="card-img" src="./static/images/stream-preview.PNG">
+                            <div class="card-img-overlay">
+                                <p class="text-left ml-0" style="color: green;">Online</p>
                             </div>
                         </div>
-                        <div id="online-status" class="col-md-7">
-                            <h5 class="p1">Online 😄</h5>
-                            <img src="./static/images/stream-preview.PNG"/>
-                        </div> 
-                    </div>
+
                     </div>
                 </div>
             </div>
@@ -169,6 +176,8 @@
                             10/7/2018
                         </div>
                     </div>
+
+                    
                     <br />
                 </div>
                 <!-- end of blog -->

@@ -33,6 +33,7 @@ nav .navbar-nav li a:hover{
     /*this gradient doesn't look half bad?*/
     background: linear-gradient(#000000, #111111);
     border-radius: 3px;
+    color: lightgrey;
 }
 
 #logo img {
@@ -43,22 +44,8 @@ nav .navbar-nav li a:hover{
     border-radius: 3px;
 }
 
-#online-status h5{
-    color: green!important;
-    position: absolute;
-    top: 24px;
-    left: 20px;
-}
-#online-status img{
-    width:auto;
-    height: auto;
-    max-height: 120px;
-    border-radius: 3px;
-}
-
-#stream-status p{
-    text-align: right;
-    color: white;
+div.card img {
+    min-width: 120px;
 }
 
 /* CONTENT CSS */
