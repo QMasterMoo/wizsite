@@ -15,17 +15,18 @@
         "babel-loader": "latest",
         "babel-preset-env": "latest",
         "babel-preset-react": "latest",
-        "eslint": "latest",
+        "eslint": "^5.8.0",
         "eslint-config-airbnb": "latest",
         "eslint-plugin-import": "latest",
         "eslint-plugin-react": "latest",
-        "webpack": "latest"
+        "webpack": "^4.23.1",
+        "webpack-cli": "^3.1.2"
     },
     "dependencies": {
         "isomorphic-fetch": "latest",
         "moment": "latest",
         "prop-types": "latest",
-        "react": "latest",
-        "react-dom": "latest",
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0"
     }
 }
