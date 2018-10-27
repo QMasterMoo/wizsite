@@ -106,3 +106,4 @@ venv.bak/
 # not sure why this wasn't here before?
 # ignore node.js modules
 node_modules/
+package-lock.json
