@@ -1,0 +1,8 @@
+CREATE TABLE Users (
+    uid INTEGER AUTO_INCREMENT,
+    username VARCHAR(24) NOT NULL,
+    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    password VARCHAR(256) NOT NULL,
+    PRIMARY KEY(uid),
+    UNIQUE(username)
+);
