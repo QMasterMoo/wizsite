@@ -10,10 +10,11 @@
         "url": "https://github.com/QMasterMoo/wizsite"
     },
     "devDependencies": {
-        "babel-core": "latest",
+        "babel-core": "^6.x",
         "babel-eslint": "latest",
-        "babel-loader": "latest",
+        "babel-loader": "^7.x",
         "babel-preset-env": "latest",
+        "babel-preset-es2015": "^6.24.1",
         "babel-preset-react": "latest",
         "eslint": "^5.8.0",
         "eslint-config-airbnb": "latest",
