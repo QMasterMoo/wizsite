@@ -1,0 +1,7 @@
+#!/bin/bash
+# Alex Harding <alex.harding@whale-net.net>
+
+source env/bin/activate
+export FLASK_ENV=development
+export FLASK_APP=wizsite
+flask run --host 0.0.0.0 --port 8000
