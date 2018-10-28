@@ -107,3 +107,4 @@ venv.bak/
 # ignore node.js modules
 node_modules/
 package-lock.json
+bundle.js
