@@ -5,13 +5,16 @@
 const path = require('path');
 
 module.exports = {
-  entry: './wizsite/js/main.jsx',
+  entry: {
+    app: './wizsite/js/main.jsx',
+  },
   output: {
     path: path.join(__dirname, '/wizsite/static/js/'),
     filename: 'bundle.js',
   },
+  mode: 'development',
   module: {
-    loaders: [
+    rules: [
       {
         // Test for js or jsx files
         test: /\.jsx?$/,
