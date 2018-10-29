@@ -1,7 +1,6 @@
 """
 Password authentication. No interaction with database, only processes information.
 """
-import flask
 import uuid
 import hashlib
 
