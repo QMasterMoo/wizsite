@@ -15,5 +15,6 @@ app.config.from_envvar('SITE_SETTINGS', silent=True)
 
 # give access to our friends api, model, and view
 import wizsite.api
-#import wizsite.model
+import wizsite.model
 import wizsite.views
+import wizsite.util
