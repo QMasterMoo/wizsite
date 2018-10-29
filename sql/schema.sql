@@ -39,5 +39,6 @@ CREATE VIEW LatestBlogs AS (
     ) lid ON b.bid = lid.bid
     INNER JOIN Content c 
     ON lid.tid = c.tid
+    WHERE b.visible IS 1
 );
 
