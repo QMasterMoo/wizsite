@@ -23,12 +23,12 @@ def test_db():
     cursor.close()
     return string
 
-def get_latest_blogs(num_posts=10, page_number=0):
+def get_latest_blogs(num_posts=3, page_number=0):
     """
     Query latest blog posts.
     """
-    if num_posts > 10:
-        num_posts = 10
+    if num_posts > 3:
+        num_posts = 3
     if num_posts < 0:
         num_posts = 0
     if page_number < 0:
