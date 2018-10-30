@@ -23,6 +23,28 @@ def test_db():
     cursor.close()
     return string
 
+def get_latest_blogs(num_posts=10, page_number=0):
+    """
+    Query latest blog posts.
+    """
+    if num_posts > 10:
+        num_posts = 10
+    if num_posts < 0:
+        num_posts = 0
+    if page_number < 0:
+        page_number = 0
+
+    cursor = get_db().cursor()
+    offset = num_posts * page_number
+    query = """
+            SELECT * FROM LatestBlogs
+            LIMIT %s, %s
+            """
+    cursor.execute(query, (offset, num_posts))
+    posts = cursor.fetchall()
+    cursor.close()
+    return posts
+
 def get_db():
     """
     Return database connection or open new one if not present.
