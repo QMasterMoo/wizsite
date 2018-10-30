@@ -8,21 +8,6 @@ import sys
 
 from wizsite.util.shutdown import shutdown_server
 
-def test_db():
-    """
-    does she exist?
-    """
-    cursor = get_db().cursor()
-    query = """
-            SELECT password
-            FROM Users
-            WHERE username=%s
-            """
-    cursor.execute(query, ('alex',))
-    string = cursor.fetchone()[0]
-    cursor.close()
-    return string
-
 def get_latest_blogs(num_posts=3, page_number=0):
     """
     Query latest blog posts.
