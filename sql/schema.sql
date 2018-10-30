@@ -30,7 +30,7 @@ CREATE TABLE Content (
 );
 
 CREATE VIEW LatestBlogs AS (
-    SELECT b.title, b.posted, c.content, c.created as edited
+    SELECT b.title, b.posted, c.content, c.created as edited, u.username
     FROM Blog b
     INNER JOIN (
         SELECT MAX(c.tid) as tid, c.bid
@@ -39,6 +39,8 @@ CREATE VIEW LatestBlogs AS (
     ) lid ON b.bid = lid.bid
     INNER JOIN Content c 
     ON lid.tid = c.tid
-    WHERE b.visible IS 1
+    INNER JOIN Users u
+    ON b.author_id = u.uid
+    WHERE b.visible <> 0
 );
 
