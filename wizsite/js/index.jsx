@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import RecentBlog from './recentblog';
 
 
 class Index extends React.Component {
@@ -31,8 +32,12 @@ class Index extends React.Component {
         // Render index
         return (
             <div className="index">
-                <p>props url {this.props.url}</p>
-                <p>api tidbit {this.state.test}</p>
+                <section id="content" className="container-fluid"><br />
+                <div id="content" className="row">
+                {/* <Tweeter /> */}
+                <RecentBlog url={this.props.url + 'blogs/'}/>
+                </div>
+                </section>
             </div>
         )
     }
