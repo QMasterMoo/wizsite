@@ -42,5 +42,6 @@ CREATE VIEW LatestBlogs AS (
     INNER JOIN Users u
     ON b.author_id = u.uid
     WHERE b.visible <> 0
+    ORDER BY b.posted DESC
 );
 
