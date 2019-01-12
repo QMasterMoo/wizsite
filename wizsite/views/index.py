@@ -15,4 +15,4 @@ def get_index():
     """
     context = {}
     update_header_dict(context)
-    return flask.render_template("index.html", **context)
+    return flask.render_template("temp_index.html", **context)

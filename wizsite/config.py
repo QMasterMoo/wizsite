@@ -16,6 +16,6 @@ DATABASE_HOST = 'localhost'
 DATABASE_PASSWORD = 'password'
 
 # Header information
-TWITCH_NAME = ''
+TWITCH_NAME = 'robwiztv'
 HEADER_UPDATE_INTERVAL_SECONDS = 60
-TWITCH_CLIENT_ID = ''
+TWITCH_CLIENT_ID = '8qe9r2n4hwixcyg6rnm9hgcz7x6dly'

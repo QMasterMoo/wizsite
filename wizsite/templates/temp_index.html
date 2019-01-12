@@ -1,8 +1,12 @@
 {% extends "header.html" %}
 {% block content %}
+<!-- Load Twitter JS -->
+
+
 <div id="reactEntry">
     loading
 </div>
 <!-- Load JS -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
 {% endblock %}

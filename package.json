@@ -28,6 +28,7 @@
         "moment": "latest",
         "prop-types": "latest",
         "react": "^16.6.0",
-        "react-dom": "^16.6.0"
+        "react-dom": "^16.6.0",
+        "react-twitter-embed": "^2.0.4"
     }
 }

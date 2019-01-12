@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import SmallBlogEntry from './smallblogentry';
+
 
 class RecentBlog extends React.Component {
 
@@ -28,25 +30,29 @@ class RecentBlog extends React.Component {
         // Render Recent Blog posts
         const blogposts = [];
         if ("posts" in this.state){
+            let key = 0;
             this.state.posts.forEach((post) => {
                 blogposts.push(
-                    <SmallBlogEntry 
+                    <SmallBlogEntry key={key}
                         author={post['author']}
                         title={post['title']}
                         content={post['content']}
                         posted={post['posted']}
                     />
                 );
+                // TODO: figure out js way to do this proper (map?)
+                key += 1;
             })
         }
 
+        const tweets = [];
+
         return (
-            <div id="blog" className="col-md-6">
+        <div id="blog" className="col-md-6">
             <div id="blog-title" className="card lead mb-2 bg-dark">
                 <div className="card-header">Latest Posts</div>
                 {blogposts}
             </div>
-
             <br />
         </div>
         )
@@ -57,41 +63,6 @@ RecentBlog.propTypes = {
     url: PropTypes.string.isRequired,
 };
 
-class SmallBlogEntry extends React.Component {
-
-    constructor(props){
-        super(props);
-    }
-    // TODO multiple classnames?
-    render() {
-        // Render Blog entry
-        return (
-        <div id="blog" className="col-md-6">
-            <div id="blog-title" className="card lead mb-2 bg-dark">
-                 {this.props.title}
-            </div>
-            <div className="card mb-1 bg-dark">
-                <div className="card-header">
-                    <h6 className={"card-subtitle text-muted"}>{this.props.author}</h6>
-                </div>
-                <div className="card-body">
-                    {this.props.content}
-                </div>
-                <div className="card-footer text-muted small text-right">
-                    {this.props.posted}
-                </div>
-            </div>
-            <br />
-        </div>
-        )
-    }
-};
-
-SmallBlogEntry.propTypes = {
-    author: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
-};
 
 
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RecentBlog from './recentblog';
 
+import RecentBlog from './recentblog';
+import Tweeter from './tweeter';
 
 class Index extends React.Component {
     /* Displays main index of website */
@@ -34,8 +35,8 @@ class Index extends React.Component {
             <div className="index">
                 <section id="content" className="container-fluid"><br />
                 <div id="content" className="row">
-                {/* <Tweeter /> */}
                 <RecentBlog url={this.props.url + 'blogs/'}/>
+                <Tweeter />
                 </div>
                 </section>
             </div>
